@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Generator from "./components/QRCode";
 import Footer from "./components/Footer";
 
