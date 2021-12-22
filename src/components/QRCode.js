@@ -55,7 +55,7 @@ const Generator = () => {
           </div>
           {imageUrl ? (
             <div className="codeImg">
-              <a href={imageUrl} download>
+              <a href={imageUrl} download="code.jpg">
                 <img src={imageUrl} alt="qrcode" />
               </a>
             </div>
@@ -73,7 +73,7 @@ const Generator = () => {
           />
           <p>
             Scanned Code:{" "}
-            <a rel="noreferrer" target="_blank" href={scanResult}>
+            <a rel="noopener noreferrer" target="_blank" href={scanResult}>
               {scanResult}
             </a>
           </p>
