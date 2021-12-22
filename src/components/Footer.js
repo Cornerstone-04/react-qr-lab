@@ -6,11 +6,11 @@ const Footer = () => {
     <footer>
       <div className="icons">
         <span> Ephraim Cornerstone &copy;2020</span>|
-        <a href="https://www.linkedin.com/in/cornerstone-ephraim/">
+        <a href="https://github.com/Cornerstone-04/">
           <i className="fab fa-github-alt"></i>
         </a>
         |
-        <a href="https://www.facebook.com/cornerstone-ephraim/">
+        <a href="https://www.facebook.com/profile.php?id=100070679834824">
           <i className="fab fa-facebook-f"></i>
         </a>
         |{" "}
@@ -18,7 +18,7 @@ const Footer = () => {
           <i className="fab fa-instagram"></i>
         </a>
         |
-        <a href="https://github.com/Cornerstone-04/">
+        <a href="https://www.linkedin.com/in/cornerstone-ephraim/">
           <i className="fab fa-linkedin-in"></i>
         </a>
       </div>
