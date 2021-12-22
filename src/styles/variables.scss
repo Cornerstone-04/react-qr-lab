@@ -1,0 +1,64 @@
+//colors
+$qrgreen: #10B850;
+$qrpurple: #200E32;
+$qrblue: #0058DB;
+$qrsmoke: #E0E0E0;
+$qrgray: #AFACAC;
+$qrblack: #000D18;
+$qrred: #028739;
+$white: #FFFFFF;
+
+@font-face {
+    font-family: "Helvetica-Neue Heavy";
+    src: local("Helvetica-Neue Heavy"),
+     url("../assets/fonts/HelveticaNeue/Helvetica-Neue-Black.ttf") format("truetype");
+    }
+@font-face{
+    font-family: "Helvetica-Neue Bold";
+    src: local("Helvetica-Neue Bold"),
+    url("../assets/fonts/HelveticaNeue/Helvetica-Neue-Heavy.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Helvetica-Neue Semibold";
+    src: local("Helvetica-Neue Semibold"),
+    url("../assets/fonts/HelveticaNeue/Helvetica-Neue-Bold.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Helvetica-Neue Medium";
+    src: local("Helvetica-Neue Medium"),
+    url("../assets/fonts/HelveticaNeue/Helvetica-Neue-Medium.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Helvetica-Neue Regular";
+    src: local("Helvetica-Neue Regular"),
+    url("../assets/fonts/HelveticaNeue/Helvetica-Neue-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Helvetica-Neue Light";
+    src: local("Helvetica-Neue Light"),
+    url("../assets/fonts/HelveticaNeue/Helvetica-Neue-Thin.ttf") format("truetype");
+}
+
+$Helvetica-Heavy: "Helvetica-Neue Heavy";
+$Helvetica-Bold: "Helvetica-Neue Bold";
+$Helvetica-Semibold: "Helvetica-Neue Semibold";
+$Helvetica-Medium: "Helvetica-Neue Medium";
+$Helvetica-Regular: "Helvetica-Neue Regular";
+$Helvetica-Light: "Helvetica-Neue Light";
+
+//font-sizes
+$xx-large: 40px;
+$x-large: 33px;
+$large: 30px;
+$normal: 20px;
+$small: 16px;
+$x-small: 14px;
+$xx-small: 12px;
+
+//font-weights
+$bold: 900;
+$semi-bold: 800;
+$regular: 700;
+$semi-regular: 600;
+$light: 500;
+$thin: 400;

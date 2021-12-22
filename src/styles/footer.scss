@@ -1,0 +1,27 @@
+@import "./variables.scss";
+footer{
+    font-family: $Helvetica-Semibold;
+    position: absolute;
+    bottom: 0;
+    background-color: $qrblue;
+    color: $white;
+    width: 100%;
+    max-width: 100vw;
+    text-align: center;
+    height: 40px;
+    font-size: $small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width: 500px){
+        font-size: $x-small;
+    }
+    div.icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            margin: 0 5px;
+        }
+    }
+}

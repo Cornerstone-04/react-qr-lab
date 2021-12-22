@@ -1,0 +1,103 @@
+@import "./variables.scss";
+*{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    section.main{
+        margin: 0 auto;
+        margin-top: 30px;
+        div{
+            div.form{
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                align-items: flex-end;
+                margin: 0 auto;
+                @media(max-width: 500px){
+                    gap: 20px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                input.textfield{
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid $qrblack;
+                    width: 100%;
+                    max-width: 500px;
+                    height: 40px;
+                    padding-bottom: 0;
+                    font-family: $Helvetica-Regular;
+                    font-size: $small;
+                    transition: 0.3s ease-in-out;
+                    color: $qrgray;
+                    @media(max-width: 500px){
+                        max-width: 300px;
+                        font-size: $x-small;
+                        &::placeholder{
+                            font-size: $x-small;
+                        }
+                        &:focus{
+                            font: $small;
+                            &::placeholder{
+                                font-size: $small;
+                            }
+                        }
+                    }
+                    &::placeholder{
+                        color: $qrgray;
+                        transition: 0.3s ease-in-out;
+                        font-size: $small;
+                    }
+                    &:focus{
+                        transition: 0.3s ease-in-out;
+                        color: $qrpurple;
+                        font-size: $normal;
+                        &::placeholder{
+                            transition: 00.3s ease-in-out;
+                            color: $qrpurple;
+                            font-size: $normal;
+                        }
+                    }
+                    
+                }
+                
+                    
+                button.create{
+                    height: 40px;
+                    width: 100%;
+                    max-width: 100px;
+                    color: $white;
+                    background-color: $qrgreen;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: $small;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    transition: 0.3s ease-in-out;
+                    font-weight: $semi-bold;
+                    &:focus, &:active, &:visited, &:hover{
+                        transition: 0.3s ease-in-out;
+                        outline: 2px solid $qrgreen;
+                        background-color: $white;
+                        color: $qrgreen;
+                    }
+                }
+            }
+            div.codeImg{
+                margin-top: 20px;
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
