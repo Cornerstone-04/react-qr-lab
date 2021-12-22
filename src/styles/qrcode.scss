@@ -14,7 +14,22 @@
     section.main{
         margin: 0 auto;
         margin-top: 30px;
-        div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        text-align: center;
+        @media(max-width: 1000px){
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        div.gen{
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             div.form{
                 display: flex;
                 justify-content: center;
@@ -27,11 +42,12 @@
                     align-items: center;
                 }
                 input.textfield{
+                    margin: 0 auto;
                     outline: none;
                     border: none;
                     border-bottom: 2px solid $qrblack;
                     width: 100%;
-                    max-width: 500px;
+                    max-width: 450px;
                     height: 40px;
                     padding-bottom: 0;
                     font-family: $Helvetica-Regular;
@@ -60,6 +76,7 @@
                         transition: 0.3s ease-in-out;
                         color: $qrpurple;
                         font-size: $normal;
+                        border-bottom: 2px solid $qrgreen;
                         &::placeholder{
                             transition: 00.3s ease-in-out;
                             color: $qrpurple;
@@ -98,6 +115,51 @@
                 margin-top: 20px;
                 img{
                     width: 200px;
+                }
+            }
+        }
+        div.scan{
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            button{
+                margin: 10px auto;
+                height: 40px;
+                width: 100%;
+                max-width: 140px;
+                color: $white;
+                background-color: $qrred;
+                cursor: pointer;
+                font-size: $x-small;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                transition: 0.3s ease-in-out;
+                font-weight: $semi-bold;
+                &:focus, &:active, &:visited, &:hover{
+                    transition: 0.3s ease-in-out;
+                    outline: 2px solid $qrred;
+                    background-color: $white;
+                    color: $qrred;
+                }
+            }
+            .qrreader{
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                // margin-top: 10px;
+            }
+            p{
+                margin-top: 10px;
+                font-family: $Helvetica-Medium;
+                a{
+                    font-family: $Helvetica-Regular;
+                    color: $qrblue;
                 }
             }
         }

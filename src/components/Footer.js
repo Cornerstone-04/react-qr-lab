@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="icons">
-        <i> Ephraim Cornerstone &copy;2020</i>|
+        <span> Ephraim Cornerstone &copy;2020</span>|
         <a href="https://www.linkedin.com/in/cornerstone-ephraim/">
           <i className="fab fa-github-alt"></i>
         </a>
