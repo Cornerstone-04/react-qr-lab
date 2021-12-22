@@ -24,13 +24,16 @@
             flex-direction: column;
         }
         div.gen{
-            width: 30%;
+            width: 100%;
+            max-width: 300px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             div.form{
+                width: 100%;
+                max-width: 300px;
                 display: flex;
                 justify-content: center;
                 gap: 40px;
@@ -38,16 +41,16 @@
                 margin: 0 auto;
                 @media(max-width: 500px){
                     gap: 20px;
-                    flex-direction: column;
+                    // flex-direction: column;
                     align-items: center;
                 }
                 input.textfield{
+                    background: transparent;
                     margin: 0 auto;
                     outline: none;
                     border: none;
                     border-bottom: 2px solid $qrblack;
-                    width: 100%;
-                    max-width: 450px;
+                    width: 300px;
                     height: 40px;
                     padding-bottom: 0;
                     font-family: $Helvetica-Regular;
@@ -55,7 +58,7 @@
                     transition: 0.3s ease-in-out;
                     color: $qrgray;
                     @media(max-width: 500px){
-                        max-width: 300px;
+                        // max-width: 300px;
                         font-size: $xx-small;
                         &::placeholder{
                             font-size: $xx-small;
@@ -130,11 +133,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media(max-width: 500px){
+                width: 300px;
+            }
             button{
                 margin: 10px auto;
                 height: 40px;
                 width: 100%;
-                max-width: 100px;
+                max-width: 400px;
                 color: $white;
                 background-color: $qrred;
                 cursor: pointer;
@@ -151,7 +157,7 @@
                     color: $qrred;
                 }
                 @media (max-width: 500px) {
-                    width: 70px;
+                    max-width: 300px;
                     font-size: $x-small;
                 }
             }
@@ -174,7 +180,8 @@
             }
         }
         div.webcam{
-            width: 30%;
+            width: 100%;
+            max-width: 300px;
             margin: 0 auto;
             text-align: center;
             display: flex;
