@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;  
     border: 1px dashed $qrpurple;
+    overflow: hidden;
     @media(max-width: 500px){
         padding: 0 10px;
         padding-left: 0;
