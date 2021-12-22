@@ -8,6 +8,7 @@ const Generator = () => {
   const [text, setText] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [scanResult, setScanResult] = useState("");
+  const [webCam, setWebCam] = useState("");
 
   const qrRef = useRef(null);
   const handleErrorFile = (error) => {
@@ -21,6 +22,16 @@ const Generator = () => {
 
   const onScanFile = () => {
     qrRef.current.openImageDialog();
+  };
+
+  const handleScanCam = (result) => {
+    if (result) {
+      setWebCam(result);
+    }
+  };
+
+  const handleErrorCam = (error) => {
+    console.log(error);
   };
 
   const generateQR = async () => {
@@ -62,7 +73,7 @@ const Generator = () => {
           ) : null}
         </div>
         <div className="scan">
-          <button onClick={onScanFile}>Scan QR Code</button>
+          <button onClick={onScanFile}>Scan</button>
           <QrReader
             className="qrreader"
             ref={qrRef}
@@ -78,7 +89,21 @@ const Generator = () => {
             </a>
           </p>
         </div>
-        <div></div>
+        <div className="webcam">
+          <h2>QR Code scanner</h2>
+          <QrReader
+            className="qrscanner"
+            delay={300}
+            onError={handleErrorCam}
+            onScan={handleScanCam}
+          />
+          <p>
+            Scanned Code:{" "}
+            <a rel="noopener noreferrer" target="_blank" href={webCam}>
+              {webCam}
+            </a>{" "}
+          </p>
+        </div>
       </section>
     </div>
   );

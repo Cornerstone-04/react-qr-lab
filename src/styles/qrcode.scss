@@ -24,7 +24,7 @@
             flex-direction: column;
         }
         div.gen{
-            width: 50%;
+            width: 30%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -56,31 +56,31 @@
                     color: $qrgray;
                     @media(max-width: 500px){
                         max-width: 300px;
-                        font-size: $x-small;
+                        font-size: $xx-small;
                         &::placeholder{
-                            font-size: $x-small;
+                            font-size: $xx-small;
                         }
                         &:focus{
-                            font: $small;
+                            font: $x-small;
                             &::placeholder{
-                                font-size: $small;
+                                font-size: $x-small;
                             }
                         }
                     }
                     &::placeholder{
                         color: $qrgray;
                         transition: 0.3s ease-in-out;
-                        font-size: $small;
+                        font-size: $xx-small;
                     }
                     &:focus{
                         transition: 0.3s ease-in-out;
                         color: $qrpurple;
-                        font-size: $normal;
+                        font-size: $x-small;
                         border-bottom: 2px solid $qrgreen;
                         &::placeholder{
                             transition: 00.3s ease-in-out;
                             color: $qrpurple;
-                            font-size: $normal;
+                            font-size: $x-small;
                         }
                     }
                     
@@ -109,6 +109,10 @@
                         background-color: $white;
                         color: $qrgreen;
                     }
+                    @media (max-width: 500px) {
+                        width: 70px;
+                        font-size: $xx-small;
+                    }
                 }
             }
             div.codeImg{
@@ -119,9 +123,8 @@
             }
         }
         div.scan{
-            width: 50%;
+            width: 30%;
             margin: 0 auto;
-            margin-bottom: 50px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -131,7 +134,7 @@
                 margin: 10px auto;
                 height: 40px;
                 width: 100%;
-                max-width: 140px;
+                max-width: 100px;
                 color: $white;
                 background-color: $qrred;
                 cursor: pointer;
@@ -147,6 +150,10 @@
                     background-color: $white;
                     color: $qrred;
                 }
+                @media (max-width: 500px) {
+                    width: 70px;
+                    font-size: $x-small;
+                }
             }
             .qrreader{
                 width: 100%;
@@ -157,6 +164,42 @@
             p{
                 margin-top: 10px;
                 font-family: $Helvetica-Medium;
+                @media (max-width: 500px) {
+                    font-size: $xx-small;
+                }
+                a{
+                    font-family: $Helvetica-Regular;
+                    color: $qrblue;
+                }
+            }
+        }
+        div.webcam{
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            h2{
+                margin: 0 auto;
+                margin-top: 20px;
+                @media(max-width: 500px){
+                    font-size: $small;
+                }
+            }
+            .qrscanner{
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            p{
+                margin-top: 10px;
+                font-family: $Helvetica-Medium;
+                @media (max-width: 500px) {
+                    font-size: $xx-small;
+                }
                 a{
                     font-family: $Helvetica-Regular;
                     color: $qrblue;
