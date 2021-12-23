@@ -4,6 +4,7 @@ import Generator from "./components/QRCode";
 import Footer from "./components/Footer";
 
 function App() {
+  // window.onload(alert("Hello"))
   return (
     <div className="App">
       <Generator />
